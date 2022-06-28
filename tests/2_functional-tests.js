@@ -64,6 +64,9 @@ suite('Functional Tests', function () {
 });
 
 const Browser = require('zombie');
+Browser.site = 'http://localhost:3000/';
+const browser = new Browser();
+
 
 suite('Functional Tests with Zombie.js', function () {
   this.timeout(5000);
